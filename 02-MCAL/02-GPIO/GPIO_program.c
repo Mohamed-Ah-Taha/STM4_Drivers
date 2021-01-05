@@ -101,11 +101,11 @@ void MGPIO_voidSetPinValue(u8 Copy_u8Port, u8 Copy_u8Pin, u8 Copy_u8Value)
 		case GPIOA :
 					if(Copy_u8Value == GPIO_HIGH)
 					{
-						SET_BIT(GPIOA_ODR,Copy_u8Pin);
+						GPIOA_BSRR = (1 << Copy_u8Pin);
 					}
 					else if(Copy_u8Value == GPIO_LOW)
 					{
-						CLR_BIT(GPIOA_ODR,Copy_u8Pin);
+						GPIOA_BRR = (1 << Copy_u8Pin);
 					}
 					else
 					{
@@ -115,11 +115,11 @@ void MGPIO_voidSetPinValue(u8 Copy_u8Port, u8 Copy_u8Pin, u8 Copy_u8Value)
 		case GPIOB :
 					if(Copy_u8Value == GPIO_HIGH)
 					{
-						SET_BIT(GPIOB_ODR,Copy_u8Pin);
+						GPIOB_BSRR = (1 << Copy_u8Pin);
 					}
 					else if(Copy_u8Value == GPIO_LOW)
 					{
-						CLR_BIT(GPIOB_ODR,Copy_u8Pin);
+						GPIOB_BRR = (1 << Copy_u8Pin);
 					}
 					else
 					{
@@ -129,11 +129,11 @@ void MGPIO_voidSetPinValue(u8 Copy_u8Port, u8 Copy_u8Pin, u8 Copy_u8Value)
 		case GPIOC :
 					if(Copy_u8Value == GPIO_HIGH)
 					{
-						SET_BIT(GPIOC_ODR,Copy_u8Pin);
+						GPIOC_BSRR = (1 << Copy_u8Pin);
 					}
 					else if(Copy_u8Value == GPIO_LOW)
 					{
-						CLR_BIT(GPIOC_ODR,Copy_u8Pin);
+						GPIOC_BRR = (1 << Copy_u8Pin);
 					}
 					else
 					{
