@@ -1,13 +1,15 @@
 /***************************************************/
 /* Author   : Mohamed Taha                         */
-/* Version  : V01                                  */
-/* Date     : 29 DEC 2020                          */
+/* Version  : V02                                  */
+/* Date     : 05 JAN 2021                          */
 /***************************************************/
 #include "STD_TYPES.h"
 #include "BIT_MATH.h"
 
-#include "GPIO_private.h"
+
 #include "GPIO_interface.h"
+#include "GPIO_private.h"
+#include "GPIO_config.h"
 
 /* MCAL GPIO */
 
